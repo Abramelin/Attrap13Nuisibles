@@ -1,0 +1,886 @@
+/* Applique le curseur cible à tout le document */
+body {
+    cursor: url('C:/Users/TROJA/OneDrive/Bureau/Documents/images/cibles.png'), auto; /* Curseur personnalisé avec un repli sur le curseur par défaut */
+}
+
+
+.separator {
+    height: 4px;
+    background: linear-gradient(90deg, #FF0000, #000000, #FF0000);
+    background-size: 200%;
+    animation: gradientMove 3s linear infinite;
+    margin: 20px 0;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
+
+/* Bande décorative thématique */
+.themed-banner {
+    position: relative;
+    width: 100%;
+    color: #FFFFFF; /* Texte blanc pour un bon contraste */
+    overflow: hidden;
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Arrière-plan avec icône en répétition */
+    background-image: url('/mnt/data/image.png');
+    background-color: #FF0000; /* Couleur de fond rouge si les icônes ne remplissent pas complètement */
+    background-repeat: repeat;
+    background-size: 50px; /* Ajustez la taille de l'icône selon besoin */
+    background-position: center;
+}
+
+/* Texte défilant */
+.themed-text {
+    display: inline-block;
+    padding-left: 100%; 
+    animation: scroll-text 30s linear infinite;
+    color:white;
+}
+
+/* Animation de défilement */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Styles pour le menu */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+.menu {  /* Styles for the entire menu container */
+    background-color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul li {
+    margin: 0 15px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Responsive Styles */
+  nav.menu .menu-toggle {  /* Increase specificity */
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-left: auto;
+    
+  }
+  
+  nav.menu .menu-items {  /* Increase specificity */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav.menu .menu-items a { /* Increase specificity */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    nav.menu .menu-toggle {  /* Increase specificity */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #000000;
+      z-index: 999;
+    }
+  
+    nav.menu .menu-items {  /* Increase specificity */
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      background-color: #000;
+      width: 100%;
+    }
+  
+    nav.menu .menu-items.menu-visible {  /* Increase specificity */
+      display: flex;
+    }
+  }
+
+/* Bannière rouge */
+.banner {
+    background-color: #ff0000;
+    padding: 20px 0;
+    margin-top: 50px; /* Décalage sous le menu fixe */
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+/* Section pour le logo */
+.logo-container {
+    padding: 20px;
+}
+.logo-container img {
+    width: 700px; /* Taille de l'image grand format */
+    max-width: 100%;
+    height: auto;
+    border: 3px solid red;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+/* Section pour le logob */
+.logo-containerb {
+    padding: 20px;
+
+}
+.logo-containerb img {
+    width: 700px; /* Taille de l'image grand format */
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.target{
+    width: 30px;
+    height: auto;
+    
+}
+
+/*Image et texte*/
+.image-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:right;
+
+}
+
+/* Texte sous le logo */
+.services {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #ff0000;
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #333;
+}
+
+/* Section Titre, Texte et Image */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10%;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #000000;
+    margin: 20px 0;
+    text-align: start;
+}
+
+.contact-button {
+    background-color: #c00;
+    color: #fff;
+    border: 3px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color: #a00;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid red;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+ /* Section Présentation */
+ .presentation-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.presentation {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.presentation-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation-item {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    border: 5px solid #c21212;
+    border-radius: 10px;
+    box-shadow:5px 5px 5px 5px black;
+}
+
+.presentation-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.presentation-item p {
+    font-size: 16px;
+}
+
+.emoji {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Section Nos services*/
+.Nservices{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+.services-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 0;
+    text-align: start
+
+}
+
+/* Section Nuisibles*/
+.nuisibles-h2 {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ec0707;
+    border-bottom: 1px solid #221e1e;
+    margin-bottom: 40px;
+}
+
+.nuisibles {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+    
+}
+
+.nuisibles-section {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nuisibles-section h2 {
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 0;
+    background-color: #ec0707;
+    border-bottom: 1px solid #221e1e;
+    margin-bottom: 40px;
+    border:3px solid black;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.nuisibles-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nuisibles-content img {
+    width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nuisibles-text {
+    max-width: 600px;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+    .nuisibles-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .nuisibles-content img {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+}
+
+.guêpe-gif img {
+    width: 150px;
+    height: auto;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.fg {
+    width: 40px;
+    height: auto;
+    
+}
+
+.cafards{
+    margin-bottom: 50px;
+}
+
+.coronavirus{
+    width: 40px;
+    height: auto;
+    align-items: center;
+
+}
+
+/*Section Galeries*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 200px; /* Définir une hauteur fixe pour toutes les images */
+    object-fit: cover; /* Recadre les images pour remplir le conteneur */
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid red;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gallery-section {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline;
+
+}
+
+/* Conteneur global */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Informations de Contact */
+.contact{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.contact-info h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #ec0707;
+    margin-bottom: 10px;
+    
+}
+
+.contact-info p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    font-size: 16px;
+}
+
+.contact-info span {
+    font-size: 18px;
+}
+
+/* Formulaire de Contact */
+/* Conteneur global */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Informations de Contact */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.contact-info h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #ec0707;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.contact-info span {
+    font-size: 18px;
+}
+
+/* Formulaire de Contact */
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    margin-right: 40px;
+    border: 1px solid #ec0707;
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    background-color: #ec0707;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d20606;
+}
+
+
+
+/*Section Footer*/
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-left p, .footer-center p {
+    font-size: 16px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #fd0000;
+    padding: 10px 0;
+    color: #f2f2f2;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-center i {
+    margin-right: 10px;
+}
+
+.lgo{
+    width: 250px;
+    height: auto;
+
+}
+
+/* Styles initiaux pour l'animation d'apparition */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Pour rendre le site responsive*/
+/* Menu */
+@media (max-width: 768px) {
+    .menu2 ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu2 ul li {
+        margin: 10px 0;
+    }
+
+    .menu2 ul img.target {
+        width: 50px;
+    }
+}
+
+/* Présentation */
+@media (max-width: 768px) {
+    .presentation-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation-item {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Sections de contenu */
+@media (max-width: 768px) {
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-section .text-content, .content-section .image-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+}
+
+/* Formulaire de contact */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-group {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    input, textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/* Galerie d'images */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .gallery-item {
+        height: auto;
+    }
+}
+
+/* Footer */
+
+@media (max-width: 767px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
