@@ -1037,57 +1037,6 @@ footer {
         padding: 12px;
         font-size: 16px;
     }
-/* Conteneur principal du menu */
-.menu {
-    display: flex;
-    justify-content: center; /* Centre le bouton hamburger horizontalement */
-    align-items: center;
-    padding: 10px;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-/* Bouton hamburger */
-.menu-toggle {
-    display: block;
-    font-size: 24px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0; /* Retire tout margin superflu */
-}
-
-/* Menu en colonne (caché par défaut) */
-.menu-items {
-    display: none; /* Masque le menu par défaut */
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Assure qu'il prend toute la largeur */
-    background-color: #333;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Affiche le menu en colonne et le centre */
-.menu-items.menu-visible {
-    display: flex; /* Affiche le menu en colonne */
-    align-items: center;
-}
-
-/* Style des liens du menu en mode mobile */
-.menu-items a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    width: 100%;
-    display: block;
-    text-align: center;
-}
 
 
 
