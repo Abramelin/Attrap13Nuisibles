@@ -884,3 +884,210 @@ footer {
 }
 
 
+@media (min-width: 320px) and (max-width: 480px) {
+        /* Corps du site */
+        body {
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            font-family: "Montserrat", "sans-serif";
+        }
+    
+        /* Header et Menu */
+        .menu {
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .menu ul {
+            flex-direction: column;
+            padding: 0;
+        }
+    
+        .menu ul li {
+            margin: 10px 0;
+        }
+    
+        .menu ul li a {
+            font-size: 16px;
+        }
+    
+        .menu-toggle {
+            display: block;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            align-items: center;
+        }
+    
+        /* Conteneur principal */
+        .container {
+            padding: 10px;
+            width: 100%;
+        }
+    
+        /* Titres (h2) */
+        h2, .section-title {
+            font-size: 22px;
+            text-align: center;
+            margin: 15px 0;
+        }
+    
+        /* Boutons */
+        .contact-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        /* Sections de contenu */
+        .content-section {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .text-content, .image-content {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .text-content h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .text-content p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    
+        /* Images */
+        img, .image-content img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        /* Sections de Présentation et Services */
+        .presentation-items, .services-section, .nuisibles-section {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .presentation-item, .services-section p, .nuisibles-text {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .presentation-item {
+            border-width: 2px; /* Réduit l'épaisseur des bordures */
+            padding: 10px;
+            box-sizing: border-box; /* Assure que la largeur inclut padding et bordures */
+            margin: 10px 0; /* Assure un espacement suffisant entre les items */
+        }
+    
+        /* Galerie */
+        .gallery {
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+    
+        .gallery-item {
+            height: auto;
+        }
+    
+        /* Footer */
+        footer {
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+        }
+    
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .footer-links {
+            font-size: 12px;
+            margin: 10px 0;
+        }
+    }
+    
+    /* Formulaire - Réduire la largeur des champs pour éviter le débordement */
+    .contact-form form {
+        width: 100%; /* Assure que le formulaire prend toute la largeur disponible */
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%; /* Empêche les champs de déborder */
+        box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+/* Conteneur principal du menu */
+.menu {
+    display: flex;
+    justify-content: center; /* Centre le bouton hamburger horizontalement */
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Bouton hamburger */
+.menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0; /* Retire tout margin superflu */
+}
+
+/* Menu en colonne (caché par défaut) */
+.menu-items {
+    display: none; /* Masque le menu par défaut */
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Assure qu'il prend toute la largeur */
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Affiche le menu en colonne et le centre */
+.menu-items.menu-visible {
+    display: flex; /* Affiche le menu en colonne */
+    align-items: center;
+}
+
+/* Style des liens du menu en mode mobile */
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+
