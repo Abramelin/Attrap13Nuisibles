@@ -154,7 +154,9 @@ body {
     padding: 20px 0;
     margin-top: 50px; /* Décalage sous le menu fixe */
     border: 3px solid black;
+    border-radius:5px;
     box-shadow: 3px 3px 3px 3px;
+    
 }
 
 /* Section pour le logo */
@@ -349,7 +351,7 @@ body {
 /* Section Nuisibles*/
 .nuisibles-h2 {
     text-align: center;
-    padding: 30px 0;
+    padding: 30px ;
     background-color: #ec0707;
     border-bottom: 1px solid #221e1e;
     margin-bottom: 40px;
@@ -379,11 +381,7 @@ body {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     padding: 30px 0;
-    background-color: #ec0707;
-    border-bottom: 1px solid #221e1e;
-    margin-bottom: 40px;
-    border:3px solid black;
-    box-shadow: 3px 3px 3px 3px;
+   
 }
 
 .nuisibles-content {
@@ -1018,76 +1016,5 @@ footer {
             margin: 10px 0;
         }
     }
-    
-    /* Formulaire - Réduire la largeur des champs pour éviter le débordement */
-    .contact-form form {
-        width: 100%; /* Assure que le formulaire prend toute la largeur disponible */
-        padding: 10px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%; /* Empêche les champs de déborder */
-        box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
-        font-size: 14px;
-    }
-
-    button[type="submit"] {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-    }
-/* Conteneur principal du menu */
-.menu {
-    display: flex;
-    justify-content: center; /* Centre le bouton hamburger horizontalement */
-    align-items: center;
-    padding: 10px;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-/* Bouton hamburger */
-.menu-toggle {
-    display: block;
-    font-size: 24px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0; /* Retire tout margin superflu */
-}
-
-/* Menu en colonne (caché par défaut) */
-.menu-items {
-    display: none; /* Masque le menu par défaut */
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Assure qu'il prend toute la largeur */
-    background-color: #333;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Affiche le menu en colonne et le centre */
-.menu-items.menu-visible {
-    display: flex; /* Affiche le menu en colonne */
-    align-items: center;
-}
-
-/* Style des liens du menu en mode mobile */
-.menu-items a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    width: 100%;
-    display: block;
-    text-align: center;
-}
-
-
+ 
 
