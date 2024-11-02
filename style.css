@@ -168,6 +168,7 @@ body {
     height: auto;
     border: 3px solid red;
     box-shadow: 3px 3px 3px 3px;
+    width:100%;
 }
 
 /* Section pour le logob */
