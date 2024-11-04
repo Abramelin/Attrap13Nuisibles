@@ -1,6 +1,6 @@
 /* Applique le curseur cible à tout le document */
 body {
-    cursor: url('C:/Users/TROJA/OneDrive/Bureau/Documents/images/cibles.png'), auto; /* Curseur personnalisé avec un repli sur le curseur par défaut */
+    cursor: url('images/cibles.png'), auto; /* Curseur personnalisé avec un repli sur le curseur par défaut */
 }
 
 
