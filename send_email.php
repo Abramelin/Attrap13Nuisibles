@@ -25,10 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: " . $email . "\r\n" .
                "Reply-To: " . $email . "\r\n" .
                "X-Mailer: PHP/" . phpversion();
-=======
     // Envoyer l'email
     if (mail($destinataire, $sujet, $contenu, $headers)) {
->>>>>>> b9d6c9d7dc625a9c00b7976daf58d9026eecf6d3
         // Redirection vers une page de confirmation après envoi réussi
         header("Location: merci.html"); // Remplacez par l'URL de votre page de confirmation
         exit; // Assurez-vous d'utiliser exit() pour arrêter le script après la redirection
