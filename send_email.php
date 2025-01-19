@@ -26,9 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                "Reply-To: " . $email . "\r\n" .
                "X-Mailer: PHP/" . phpversion();
 
-    // Envoyer l'email
-    if (mail($destinataire, $sujet, $contenu, $headers)) {
-        echo "Le message a été envoyé avec succès.";
+     // Envoyer l'email
+     if (mail($destinataire, $sujet, $contenu, $headers)) {
+        // Redirection vers une page de confirmation après envoi réussi
+        header("Location: merci.html"); // Remplacez par l'URL de votre page de confirmation
+        exit; // Assurez-vous d'utiliser exit() pour arrêter le script après la redirection
     } else {
         echo "Une erreur s'est produite lors de l'envoi du message.";
     }
