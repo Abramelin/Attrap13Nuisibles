@@ -25,10 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: " . $email . "\r\n" .
                "Reply-To: " . $email . "\r\n" .
                "X-Mailer: PHP/" . phpversion();
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
     // Envoyer l'email
     if (mail($destinataire, $sujet, $contenu, $headers)) {
         // Redirection vers une page de confirmation après envoi réussi
