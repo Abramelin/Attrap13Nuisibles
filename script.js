@@ -79,5 +79,9 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Menu toggle clicked");  // Vérifie que le clic est détecté
         });
     });
+<<<<<<< HEAD
 
     
+=======
+    
+>>>>>>> e233f5098222b75f3f324bff2a8c2f44f7b908f7
